@@ -1,0 +1,125 @@
+:root {
+    --color-primario: hsl(220, 70%, 45%);
+    --color-acento: hsl(34, 90%, 55%);
+    --color-texto: hsl(220, 20%, 20%);
+    --color-fondo: hsl(210, 25%, 96%);
+    --color-borde: hsl(220, 20%, 85%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--color-fondo);
+    color: var(--color-texto);
+    padding: 24px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.product-card {
+    background: #ffffff;
+    border: 1px solid var(--color-borde);
+    border-radius: 16px;
+    padding: 24px;
+    margin: 12px;
+    width: min(100%, 260px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.card-image {
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+}
+
+.product-name {
+    color: var(--color-primario);
+    margin: 0 0 8px;
+}
+
+.product-desc {
+    margin: 0 0 12px;
+    line-height: 1.5;
+}
+
+.product-price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.btn-comprar {
+    background-color: var(--color-acento);
+    color: #ffffff;
+    border: none;
+    border-radius: 999px;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-comprar:hover {
+    opacity: 0.92;
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+    height: 400px;
+    background:
+        linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+        url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80");
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    margin-bottom:40px;
+    color:#fff;
+}
+
+.hero-content{
+    max-width:700px;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    margin-bottom:25px;
+    line-height:1.6;
+}
+
+.hero-btn{
+    display:inline-block;
+    text-decoration:none;
+    color:#fff;
+    padding:14px 28px;
+    border-radius:50px;
+    font-weight:bold;
+    background: radial-gradient(circle, #ffb347 0%, #ff7300 100%);
+    transition:.3s;
+}
+
+.hero-btn:hover{
+    transform:scale(1.08);
+    box-shadow:0 8px 20px rgba(0,0,0,.3);
+}
