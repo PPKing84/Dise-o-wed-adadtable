@@ -123,3 +123,131 @@ body {
     transform:scale(1.08);
     box-shadow:0 8px 20px rgba(0,0,0,.3);
 }
+
+/*==========================
+ HERO
+==========================*/
+
+.hero{
+
+    height:420px;
+
+    background-image:
+        linear-gradient(
+            rgba(0,0,0,.65),
+            rgba(0,0,0,.55)
+        ),
+        url("https://picsum.photos/1200/400");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    color:white;
+
+    border-radius:18px;
+
+    margin-bottom:40px;
+
+}
+
+.hero-content{
+
+    max-width:700px;
+    padding:20px;
+
+}
+
+.hero h1{
+
+    font-size:3rem;
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    font-size:1.2rem;
+    line-height:1.6;
+    margin-bottom:25px;
+
+}
+
+/*==========================
+ BOTON HERO
+==========================*/
+
+.hero-btn{
+
+    text-decoration:none;
+
+    color:white;
+
+    padding:14px 28px;
+
+    border-radius:50px;
+
+    background:
+        radial-gradient(
+            circle,
+            hsl(34,90%,65%),
+            hsl(34,90%,50%)
+        );
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.hero-btn:hover{
+
+    transform:scale(1.05);
+
+}
+
+/*==========================
+ BOTON COMPRAR
+==========================*/
+
+.btn-comprar{
+
+    background:
+        radial-gradient(
+            circle,
+            hsl(34,90%,65%),
+            hsl(34,90%,50%)
+        );
+
+    color:white;
+
+}
+
+/*==========================
+ FOOTER
+==========================*/
+
+footer{
+
+    margin-top:40px;
+
+    padding:25px;
+
+    text-align:center;
+
+    color:white;
+
+    background:
+        linear-gradient(
+            90deg,
+            hsl(220,70%,45%),
+            hsl(200,70%,50%),
+            hsl(34,90%,55%)
+        );
+
+}
